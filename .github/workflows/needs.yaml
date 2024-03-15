@@ -14,8 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test the project
-        run: echo "Testing the project..."
-
+        run: |
+          echo "Test failed..."
+          exit 1 
+ 
   deploy:
     needs: test
     runs-on: ubuntu-latest

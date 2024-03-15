@@ -24,7 +24,7 @@ jobs:
       - name: Test the project
         run: echo "Testing the project..."
 
-  deploy1:
+  deploy2:
     needs: test2
     runs-on: ubuntu-latest
     steps:

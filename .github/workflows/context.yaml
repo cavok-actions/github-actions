@@ -5,6 +5,12 @@ env:
   CUSTOM_ENV_VAR: "Hello World"
 
 jobs:
+  context_text:
+    runs-on: ubuntu-latest
+    setps:
+    - name: github context
+      run: echo "${{ github }}"
+
   example_job:
     runs-on: ubuntu-latest
     steps:

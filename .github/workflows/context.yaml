@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Print GitHub Context
-      run: echo "This commit was made by ${{ github.actor }} on ${{ github.event.push.timestamp }}"
+      run: echo "This commit was made by ${{ github.actor }} on ${{ github.event.repository.pushed_at }}"
       
     - name: Print Environment Variable
       run: echo "The value of CUSTOM_ENV_VAR is ${{ env.CUSTOM_ENV_VAR }}"

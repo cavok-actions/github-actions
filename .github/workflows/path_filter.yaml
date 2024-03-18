@@ -9,5 +9,5 @@ jobs:
   build_docs:
     runs-on: ubuntu-latest
     steps:
-    - name: Build documentation
-      run: echo "This runs only on changes to the part1 directory."
+    - name: echo
+      run: echo hello

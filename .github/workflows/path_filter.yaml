@@ -1,0 +1,13 @@
+name: path-filter
+
+on:
+  push:
+    paths:
+      - '.github/workflows/part1'
+
+jobs:
+  build_docs:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build documentation
+      run: echo "This runs only on changes to the part1 directory."

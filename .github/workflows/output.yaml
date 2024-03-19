@@ -10,7 +10,8 @@ jobs:
     steps:
     - name: echo output
       id: step1
-      run: echo "::set-output name=hello_output::Hello World"
+      run: |
+        echo "hello_output=Hello World" >> "$GITHUB_OUTPUT"
     - name: check output
       run: |
         echo ${{ steps.step1.outputs.hello_output }}

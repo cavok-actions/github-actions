@@ -5,6 +5,6 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-      - name: Check branch prefix
-        if: startsWith(github.ref, 'refs/heads/dev/')
-        run: echo "Running on a dev branch"
+    - name: Check branch prefix
+      if: startsWith(github.ref, 'refs/heads/dev')
+      run: echo "Running on a dev branch"

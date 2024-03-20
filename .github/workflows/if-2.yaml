@@ -8,12 +8,5 @@ jobs:
     - name: exit 1
       run: exit 1
     - name: echo
-      run: echo hello
-  
-  job2:
-    runs-on: ubuntu-latest
-    needs: job1
-    if: always()
-    steps:
-    - name: echo
+      if: always()
       run: echo hello

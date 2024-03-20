@@ -1,9 +1,10 @@
-name: context
-on: workflow_dispatch
+name: string-function
+on: push
 
 jobs:
-  context_text:
+  example:
     runs-on: ubuntu-latest
     steps:
-    - name: github.ref context
-      run: echo "${{ toJSON(github.ref) }}"
+      - name: Check branch prefix
+        if: startsWith(github.ref, 'refs/heads/dev/')
+        run: echo "Running on a dev branch"

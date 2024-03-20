@@ -6,5 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check branch prefix
-      if: endsWith(github.ref, '/prd')
+      if: contains(github.ref, 'dev')
       run: echo "Running on a dev branch"

@@ -13,11 +13,11 @@ jobs:
     - name: Setup tmate session
       if: always()
       uses: mxschmitt/action-tmate@v3
-      timeout-minuts: 15
+      timeout-minutes: 15
       id: setup-tmate 
     - name: Wait for tmate actions
       if: always()
-      timeout-minutes: 30
+      timeout-minutees: 30
       run: |
         echo "SSH 접속 정보: ${{ steps.setup-tmate.outputs.ssh }}"
         echo "웹 접속 정보: ${{ steps.setup-tmate.outputs.web }}"

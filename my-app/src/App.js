@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './flower.png';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to see the magic of spring.
         </p>
         <a
           className="App-link"
@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn GithubAction cicd6
+          Spring Spring Spring
         </a>
       </header>
     </div>

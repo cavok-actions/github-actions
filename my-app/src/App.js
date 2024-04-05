@@ -12,7 +12,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Spring Spring!
+          Flower!
         </a>
       </header>
     </div>
